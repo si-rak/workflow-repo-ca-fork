@@ -1,5 +1,36 @@
+# Node.js dependencies
 node_modules/
-.vscode/
-*.log
-*.cache
 
+# System and configuration files
+.DS_Store
+desktop.ini
+Thumbs.db
+*.log
+*.lock
+
+# Windows system files
+Application Data/
+Cookies/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+
+# Other irrelevant folders/files in parent directories
+../../../*
+../../*
+../*
+
+# Specific files to ignore
+*.docx
+*.pptx
+*.pdf
+*.zip
+*.jpg
+*.png
+*.jpeg
+*.odt
