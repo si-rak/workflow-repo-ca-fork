@@ -1,0 +1,68 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore compiled styles
+*.css.map
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore package lock
+package-lock.json
+yarn.lock
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore specific personal files (add more as necessary)
+*.docx
+*.jpg
+*.png
+*.pdf
+
+# Ignore build directories
+/dist/
+/build/
+
+# Exclude Windows-specific directories
+Application Data/
+Cookies/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+
+# Node.js dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+
+# System files
+*.log
+NTUSER.DAT*
+.bash_history
+.bash_profile
+.bashrc
+.viminfo
+.zshrc
+
+# Ignore everything in higher directories
+../*
+!../YourProjectDirectory/
+
+

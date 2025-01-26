@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Explore the Latest Posts | SocialSphere</title>
+  <link rel="icon" href="../favicon/favicon_io%20(3)/favicon-16x16.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link href="../dist/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100 text-gray-800 flex flex-col min-h-screen">
+ 
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold text-primary flex items-center space-x-2">
+        <img src="/images/logo.jpg" alt="SocialSphere Logo" class="w-8 h-8">
+        <a href="/" class="hover:text-secondary transition-colors">SocialSphere</a>
+      </h1>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden sm:flex space-x-6">
+        <a href="/index.html" class="text-gray-700 font-medium hover:text-primary transition-all">Home</a>
+        <a href="/feed/index.html" class="text-gray-700 font-medium hover:text-primary transition-all active">Feed</a>
+        <a href="/profile/index.html" class="text-gray-700 font-medium hover:text-primary transition-all">Profile</a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="sm:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden sm:hidden bg-white shadow-lg">
+      <ul class="space-y-2 py-4 px-4">
+        <li>
+          <a href="/index.html" class="block text-gray-700 font-medium hover:text-primary transition-all">Home</a>
+        </li>
+        <li>
+          <a href="/feed/index.html" class="block text-gray-700 font-medium hover:text-primary transition-all">Feed</a>
+        </li>
+        <li>
+          <a href="/profile/index.html" class="block text-gray-700 font-medium hover:text-primary transition-all">Profile</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <header class="text-center mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-wide bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text drop-shadow-lg">
+        Discover Posts
+      </h1>
+    </header>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center mb-8">
+      <input
+        type="text"
+        placeholder="Search posts..."
+        class="border border-gray-300 rounded-lg px-4 py-2 shadow-sm w-full focus:ring-primary focus:border-primary"
+      >
+      <select
+        class="border border-gray-300 rounded-lg px-4 py-2 shadow-sm w-full focus:ring-primary focus:border-primary">
+        <option value="recent">Sort by Recent</option>
+        <option value="popular">Sort by Popular</option>
+      </select>
+    </div>
+
+   <!-- Posts Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+  <!-- First Post -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <img
+      src="/images/feed img (2).jpg"
+      alt="Resort bar with pool"
+      class="w-full h-40 object-cover"
+    />
+    <div class="p-4">
+      <h2 class="text-lg font-semibold text-gray-900 mb-2 hover:text-primary transition-colors">
+        The Best Travel Destinations for 2025
+      </h2>
+      <p class="text-sm text-neutral-500">
+        Explore hidden top-rated destinations for your next adventure.
+      </p>
+    </div>
+  </div>
+
+  <!-- Second Post -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <img
+      src="/images/amazing food.jpg"
+      alt="Healthy Breakfast"
+      class="w-full h-40 object-cover"
+    />
+    <div class="p-4">
+      <h2 class="text-lg font-semibold text-gray-900 mb-2 hover:text-primary transition-colors">
+        Explore amazing food from around the world
+      </h2>
+      <p class="text-sm text-neutral-500">
+        Take a delicious trip exploring the best foods and hidden treasures from around the world.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Post Form -->
+    <div class="mt-12 bg-white rounded-xl shadow-md p-6 sm:p-8">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-6 text-gray-900">Create a New Post</h2>
+
+      <form>
+        <div class="mb-4">
+          <label for="title" class="block text-sm sm:text-base font-medium text-gray-700">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Enter post title"
+            class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:ring-primary focus:border-primary"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="description" class="block text-sm sm:text-base font-medium text-gray-700">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="3"
+            placeholder="Enter post description"
+            class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:ring-primary focus:border-primary"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="image" class="block text-sm sm:text-base font-medium text-gray-700">Image</label>
+          <input
+            type="file"
+            id="image"
+            name="image"
+            class="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:ring-primary focus:border-primary"
+            accept="image/*"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-lg font-medium"
+        >
+          Submit Post
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 sticky bottom-0 shadow-lg">
+    <div class="container mx-auto">
+      <p class="text-sm">&copy; 2025 SocialSphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu js -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
